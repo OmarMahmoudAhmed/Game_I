@@ -1,0 +1,69 @@
+* {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#backg {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+#score {
+    font-size: 30px;
+    position: fixed;
+    top: 5vh;
+    right: 10%;
+    color: white;
+}
+
+#game {
+    background-color: white;
+    width: 90vw;
+    max-width: 350px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 30vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+      width: 90vw;
+    }
+  }
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: green;
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    left: 480px;
+    top: 130px;
+    animation: block 1.5s infinite linear;
+}
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
